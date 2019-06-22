@@ -9,9 +9,9 @@
 import UIKit.UIView
 
 /// Helpers for reusable views.
-protocol Reusable: NibCreatable {}
+public protocol Reusable: NibCreatable {}
 
-extension Reusable {
+public extension Reusable {
     static var reuseIdentifier: String {
          return nibName
     }

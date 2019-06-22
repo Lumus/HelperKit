@@ -8,7 +8,7 @@
 
 import UIKit.UITableView
 
-extension UITableView {
+public extension UITableView {
 
     /// Registers a `Reusable` view with the table view.
     ///

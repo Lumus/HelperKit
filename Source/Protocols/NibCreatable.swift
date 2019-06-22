@@ -9,9 +9,9 @@
 import UIKit.UIView
 
 /// Helpers for creating views from Nibs.
-protocol NibCreatable where Self: UIView {}
+public protocol NibCreatable where Self: UIView {}
 
-extension NibCreatable {
+public extension NibCreatable {
 
     /// Returns a Nib for the class
     /// - Important: The `Nib` and `Class` files **must** be identically named.
