@@ -8,8 +8,8 @@
 
 import UIKit.UIColor
 
-extension UIColor {
-
+public extension UIColor {
+    
     /// Initialises a colour with the provided hex string.
     ///
     /// - Parameter hex: Hex string for the colour being decoded.
