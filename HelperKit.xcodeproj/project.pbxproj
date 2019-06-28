@@ -12,8 +12,15 @@
 		170E228922BE0E3C0024B45A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E228722BE0E3C0024B45A /* UIColor+Hex.swift */; };
 		170E228E22BE0E590024B45A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E228C22BE0E590024B45A /* Reusable.swift */; };
 		170E228F22BE0E590024B45A /* NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E228D22BE0E590024B45A /* NibCreatable.swift */; };
+		174E394022C6CBC400BEB47A /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174E393F22C6CBC400BEB47A /* FlowCoordinator.swift */; };
+		174E394822C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174E394722C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift */; };
+		174E394A22C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174E394922C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift */; };
 		175AF70322BE3423009C7619 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175AF70222BE3423009C7619 /* UICollectionView+Reusable.swift */; };
 		175EC5FA22C0CD07008379D3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EC5F922C0CD07008379D3 /* Storyboarded.swift */; };
+		179387B122C6DD5B0051FD3B /* FlowCoordinatorActionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179387B022C6DD5B0051FD3B /* FlowCoordinatorActionable.swift */; };
+		179387B322C6DD790051FD3B /* FlowCoordinatorActionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179387B222C6DD790051FD3B /* FlowCoordinatorActionSource.swift */; };
+		179387B622C6DD980051FD3B /* RootFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179387B522C6DD980051FD3B /* RootFlowCoordinator.swift */; };
+		179387B822C6DDA40051FD3B /* ChildFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179387B722C6DDA40051FD3B /* ChildFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +31,15 @@
 		170E228722BE0E3C0024B45A /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		170E228C22BE0E590024B45A /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		170E228D22BE0E590024B45A /* NibCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCreatable.swift; sourceTree = "<group>"; };
+		174E393F22C6CBC400BEB47A /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		174E394722C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		174E394922C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryProtocol.swift; sourceTree = "<group>"; };
 		175AF70222BE3423009C7619 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		175EC5F922C0CD07008379D3 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		179387B022C6DD5B0051FD3B /* FlowCoordinatorActionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorActionable.swift; sourceTree = "<group>"; };
+		179387B222C6DD790051FD3B /* FlowCoordinatorActionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorActionSource.swift; sourceTree = "<group>"; };
+		179387B522C6DD980051FD3B /* RootFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowCoordinator.swift; sourceTree = "<group>"; };
+		179387B722C6DDA40051FD3B /* ChildFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,8 @@
 		170E228522BE0DE80024B45A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				174E394522C6CD9F00BEB47A /* Factories */,
+				174E393D22C6CBB100BEB47A /* Architecture */,
 				175EC5FC22C0CDD2008379D3 /* UIView */,
 				175EC5FD22C0CDDB008379D3 /* UIViewController */,
 			);
@@ -98,6 +114,50 @@
 				175EC5FB22C0CDB9008379D3 /* Reusable */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		174E393D22C6CBB100BEB47A /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				174E393E22C6CBB800BEB47A /* FlowCoordinator */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		174E393E22C6CBB800BEB47A /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				174E393F22C6CBC400BEB47A /* FlowCoordinator.swift */,
+				179387B022C6DD5B0051FD3B /* FlowCoordinatorActionable.swift */,
+				179387B222C6DD790051FD3B /* FlowCoordinatorActionSource.swift */,
+				179387B422C6DD860051FD3B /* SubCoordinators */,
+			);
+			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		174E394422C6CD9500BEB47A /* ViewControllerFactory */ = {
+			isa = PBXGroup;
+			children = (
+				174E394922C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift */,
+			);
+			path = ViewControllerFactory;
+			sourceTree = "<group>";
+		};
+		174E394522C6CD9F00BEB47A /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				174E394622C6CDA700BEB47A /* CoordinatorFactory */,
+				174E394422C6CD9500BEB47A /* ViewControllerFactory */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		174E394622C6CDA700BEB47A /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				174E394722C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift */,
+			);
+			path = CoordinatorFactory;
 			sourceTree = "<group>";
 		};
 		175EC5FB22C0CDB9008379D3 /* Reusable */ = {
@@ -124,6 +184,15 @@
 				175EC5F922C0CD07008379D3 /* Storyboarded.swift */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		179387B422C6DD860051FD3B /* SubCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				179387B522C6DD980051FD3B /* RootFlowCoordinator.swift */,
+				179387B722C6DDA40051FD3B /* ChildFlowCoordinator.swift */,
+			);
+			path = SubCoordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +274,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179387B622C6DD980051FD3B /* RootFlowCoordinator.swift in Sources */,
 				170E228E22BE0E590024B45A /* Reusable.swift in Sources */,
+				174E394022C6CBC400BEB47A /* FlowCoordinator.swift in Sources */,
+				179387B822C6DDA40051FD3B /* ChildFlowCoordinator.swift in Sources */,
+				174E394822C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift in Sources */,
 				175AF70322BE3423009C7619 /* UICollectionView+Reusable.swift in Sources */,
+				179387B322C6DD790051FD3B /* FlowCoordinatorActionSource.swift in Sources */,
 				170E228F22BE0E590024B45A /* NibCreatable.swift in Sources */,
 				170E228822BE0E3C0024B45A /* UITableView+Reusable.swift in Sources */,
 				170E228922BE0E3C0024B45A /* UIColor+Hex.swift in Sources */,
+				174E394A22C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift in Sources */,
+				179387B122C6DD5B0051FD3B /* FlowCoordinatorActionable.swift in Sources */,
 				175EC5FA22C0CD07008379D3 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
