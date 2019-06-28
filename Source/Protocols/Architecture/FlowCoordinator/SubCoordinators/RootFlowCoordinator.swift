@@ -9,8 +9,7 @@
 import Foundation
 
 public protocol RootFlowCoordinator: FlowCoordinator {
-    init(viewControllerFactory: ViewControllerFactoryProtocol,
-         coordinatorFactory: CoordinatorFactoryProtocol)
+    init(serviceFactory: ServiceFactoryProtocol)
 
     func start()
 }

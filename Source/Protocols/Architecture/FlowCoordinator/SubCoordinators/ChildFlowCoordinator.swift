@@ -12,8 +12,7 @@ public protocol ChildFlowCoordinator: FlowCoordinator {
     var parentFlowCoordinator: FlowCoordinator { get }
 
     init(parentFlowCoordinator: FlowCoordinator,
-         viewControllerFactory: ViewControllerFactoryProtocol,
-         coordinatorFactory: CoordinatorFactoryProtocol)
+         serviceFactory: ServiceFactoryProtocol)
 
 }
 
