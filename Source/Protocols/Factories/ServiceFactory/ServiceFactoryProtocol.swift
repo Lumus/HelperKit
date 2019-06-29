@@ -9,6 +9,5 @@
 import Foundation
 
 public protocol ServiceFactoryProtocol {
-    var viewControllerFactory: ViewControllerFactoryProtocol { get }
-    var coordinatorFactory: CoordinatorFactoryProtocol { get }
+    var dataService: DataProvider { get }
 }

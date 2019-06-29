@@ -10,10 +10,6 @@ import Foundation
 
 public protocol ChildFlowCoordinator: FlowCoordinator {
     var parentFlowCoordinator: FlowCoordinator { get }
-
-    init(parentFlowCoordinator: FlowCoordinator,
-         serviceFactory: ServiceFactoryProtocol)
-
 }
 
 public extension ChildFlowCoordinator {

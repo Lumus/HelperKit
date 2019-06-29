@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		170B5DF422C717A100B665C0 /* ViewModelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B5DF322C717A100B665C0 /* ViewModelling.swift */; };
+		170B5DF822C71ADD00B665C0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B5DF722C71ADD00B665C0 /* DataProvider.swift */; };
 		170E227D22BE0D870024B45A /* HelperKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 170E227B22BE0D870024B45A /* HelperKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		170E228822BE0E3C0024B45A /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E228622BE0E3C0024B45A /* UITableView+Reusable.swift */; };
 		170E228922BE0E3C0024B45A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E228722BE0E3C0024B45A /* UIColor+Hex.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		170B5DF322C717A100B665C0 /* ViewModelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelling.swift; sourceTree = "<group>"; };
+		170B5DF722C71ADD00B665C0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		170E227822BE0D870024B45A /* HelperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		170E227B22BE0D870024B45A /* HelperKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperKit.h; sourceTree = "<group>"; };
 		170E227C22BE0D870024B45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 				170B5DF322C717A100B665C0 /* ViewModelling.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		170B5DF522C71AC700B665C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				170B5DF722C71ADD00B665C0 /* DataProvider.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		170E226E22BE0D860024B45A = {
@@ -111,6 +121,7 @@
 		170E228522BE0DE80024B45A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				170B5DF522C71AC700B665C0 /* Services */,
 				174E394522C6CD9F00BEB47A /* Factories */,
 				174E393D22C6CBB100BEB47A /* Architecture */,
 				175EC5FC22C0CDD2008379D3 /* UIView */,
@@ -298,6 +309,7 @@
 			files = (
 				179387B622C6DD980051FD3B /* RootFlowCoordinator.swift in Sources */,
 				170E228E22BE0E590024B45A /* Reusable.swift in Sources */,
+				170B5DF822C71ADD00B665C0 /* DataProvider.swift in Sources */,
 				174E394022C6CBC400BEB47A /* FlowCoordinator.swift in Sources */,
 				179387B822C6DDA40051FD3B /* ChildFlowCoordinator.swift in Sources */,
 				174E394822C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift in Sources */,

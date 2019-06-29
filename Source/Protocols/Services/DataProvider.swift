@@ -1,5 +1,5 @@
 //
-//  RootFlowCoordinator.swift
+//  DataProvider.swift
 //  HelperKit
 //
 //  Created by Matt Croxson on 29/6/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol RootFlowCoordinator: FlowCoordinator {
-    func start()
+public protocol DataProvider {
+
 }
