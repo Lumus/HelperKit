@@ -68,9 +68,9 @@
 		170E226E22BE0D860024B45A = {
 			isa = PBXGroup;
 			children = (
-				170E227A22BE0D870024B45A /* Source */,
-				170E228322BE0DD30024B45A /* Resources */,
 				170E227922BE0D870024B45A /* Products */,
+				170E228322BE0DD30024B45A /* Resources */,
+				170E227A22BE0D870024B45A /* Source */,
 			);
 			sourceTree = "<group>";
 		};
