@@ -6,7 +6,7 @@
 //  Copyright © 2019 Matt Croxson. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol ViewControllerFactoryProtocol {
     func makeViewController<T: UIViewController>(_ viewControllerType: T.Type, viewModel: ViewModelling?, flowCoordinator: FlowCoordinator) -> T?

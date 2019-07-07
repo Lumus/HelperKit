@@ -6,7 +6,7 @@
 //  Copyright © 2019 Matt Croxson. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for HelperKit.
 FOUNDATION_EXPORT double HelperKitVersionNumber;
