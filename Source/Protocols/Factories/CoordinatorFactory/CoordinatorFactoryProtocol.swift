@@ -9,6 +9,6 @@
 import Foundation
 
 public protocol CoordinatorFactoryProtocol {
-    func makeRootCoordinator<T: RootFlowCoordinator>(type: T.Type) -> T?
-    func makeCoordinator<T: FlowCoordinator>(type: T.Type, parent: FlowCoordinator) -> T?
+    func makeRootCoordinator<T: RootFlowCoordinator>() -> T?
+    func makeCoordinator<T: FlowCoordinator>(parent: FlowCoordinator) -> T?
 }
