@@ -19,8 +19,9 @@ public protocol FlowCoordinator: class {
     ///     - action: Action to be handled.
     ///     - source: The source of the action.
     /// - Returns: Bool stating whether the action has handled.
-    /// - Important: *DO NOT* attempt to call the parent coordinator's `handle(action: _)` method when handling actions as this may cause a race condition.
-    ///     Always call the parent coordinator's `handle(action: _)` method directly when required.
+    /// - Important: *DO NOT* attempt to call the parent coordinator's `handle(action: _)` method when handling actions
+    ///              as this may cause a race condition. Always call the parent coordinator's `handle(action: _)`
+    ///              method directly when required.
     @discardableResult
     func handle(action: FlowCoordinatorActionable, source: FlowCoordinatorActionSource) -> Bool
 
