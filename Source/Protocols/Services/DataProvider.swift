@@ -14,10 +14,19 @@ public protocol DataProvider {
 }
 
 public enum DataProviderError: LocalizedError {
+    /// The item identifier could not be found for the provided object type.
     case notFound(identifier: String)
+
+    /// The object type is not available in the data service.
     case unknownObject(objectType: Any)
+
+    /// An array of objects of the provided type failed to populate.
     case populateFailed(objectType: Any)
+
+    /// Object type returned is incompatible with the object type requested.
     case incompatibleObject
+
+    /// General error.
     case general(error: Error)
 
     public var errorDescription: String? {
