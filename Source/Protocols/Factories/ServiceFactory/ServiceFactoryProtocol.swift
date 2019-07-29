@@ -10,4 +10,5 @@ import Foundation
 
 public protocol ServiceFactoryProtocol {
     var dataService: DataProvider { get }
+    var dateFormatService: DateFormatProvider { get }
 }

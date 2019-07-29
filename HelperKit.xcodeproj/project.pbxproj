@@ -13,6 +13,7 @@
 		174E394022C6CBC400BEB47A /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174E393F22C6CBC400BEB47A /* FlowCoordinator.swift */; };
 		174E394822C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174E394722C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift */; };
 		174E394A22C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174E394922C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift */; };
+		1761E35422EEFF5600D95DB6 /* DateFormatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761E35322EEFF5600D95DB6 /* DateFormatProvider.swift */; };
 		179387B122C6DD5B0051FD3B /* FlowCoordinatorActionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179387B022C6DD5B0051FD3B /* FlowCoordinatorActionable.swift */; };
 		179387B322C6DD790051FD3B /* FlowCoordinatorActionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179387B222C6DD790051FD3B /* FlowCoordinatorActionSource.swift */; };
 		179387B622C6DD980051FD3B /* RootFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179387B522C6DD980051FD3B /* RootFlowCoordinator.swift */; };
@@ -30,6 +31,7 @@
 		174E393F22C6CBC400BEB47A /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		174E394722C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
 		174E394922C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryProtocol.swift; sourceTree = "<group>"; };
+		1761E35322EEFF5600D95DB6 /* DateFormatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatProvider.swift; sourceTree = "<group>"; };
 		179387B022C6DD5B0051FD3B /* FlowCoordinatorActionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorActionable.swift; sourceTree = "<group>"; };
 		179387B222C6DD790051FD3B /* FlowCoordinatorActionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorActionSource.swift; sourceTree = "<group>"; };
 		179387B522C6DD980051FD3B /* RootFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowCoordinator.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				170B5DF722C71ADD00B665C0 /* DataProvider.swift */,
+				1761E35322EEFF5600D95DB6 /* DateFormatProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				174E394022C6CBC400BEB47A /* FlowCoordinator.swift in Sources */,
 				179387B822C6DDA40051FD3B /* ChildFlowCoordinator.swift in Sources */,
 				174E394822C6CDE100BEB47A /* CoordinatorFactoryProtocol.swift in Sources */,
+				1761E35422EEFF5600D95DB6 /* DateFormatProvider.swift in Sources */,
 				170B5DF422C717A100B665C0 /* ViewModelling.swift in Sources */,
 				179387B322C6DD790051FD3B /* FlowCoordinatorActionSource.swift in Sources */,
 				17A3BAE922C73B8000999232 /* Typealiases.swift in Sources */,
