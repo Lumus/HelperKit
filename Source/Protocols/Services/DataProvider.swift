@@ -14,6 +14,8 @@ public protocol DataProvider {
 
     func getObject<T>(identifier: String,
                       completion: @escaping (Result<T, DataProviderError>) -> Void) where T: Decodable
+
+    func populate(completion: @escaping () -> Void)
 }
 
 public enum DataProviderError: LocalizedError {
