@@ -9,12 +9,8 @@
 import Foundation
 
 public protocol DataProvider {
-    func getObject<T>(identifier: Int,
-                      completion: @escaping (Result<T, DataProviderError>) -> Void) where T: Decodable
-
-    func getObject<T>(identifier: String,
-                      completion: @escaping (Result<T, DataProviderError>) -> Void) where T: Decodable
-
+    func getObject<T>(identifier: Int) -> Result<T, DataProviderError> where T: Codable
+    func getObject<T>(identifier: String) -> Result<T, DataProviderError> where T: Codable
     func populate(completion: @escaping () -> Void)
 }
 
