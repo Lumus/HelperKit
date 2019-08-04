@@ -11,7 +11,6 @@ import Foundation
 public protocol DataProvider {
     func getObject<T>(identifier: Int) -> Result<T, DataProviderError> where T: Codable
     func getObject<T>(identifier: String) -> Result<T, DataProviderError> where T: Codable
-    func populate(completion: @escaping () -> Void)
 }
 
 public enum DataProviderError: LocalizedError {

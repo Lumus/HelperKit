@@ -9,6 +9,7 @@
 import Foundation
 
 public protocol ServiceFactoryProtocol {
+    var cacheService: CacheProvider { get }
     var dataService: DataProvider { get }
     var dateFormatService: DateFormatProvider { get }
 }
