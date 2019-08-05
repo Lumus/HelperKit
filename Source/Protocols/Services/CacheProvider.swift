@@ -13,6 +13,7 @@ public typealias CacheProviderCompletion = () -> Void
 public protocol CacheProvider {
     func getObject<T>(identifier: Int) -> Result<T, CacheProviderError> where T: Codable
     func getObject<T>(identifier: String) -> Result<T, CacheProviderError> where T: Codable
+    func allObjects<T>() -> Result<T, CacheProviderError> where T: Codable
     func populate(completion: @escaping CacheProviderCompletion)
 }
 
