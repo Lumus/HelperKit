@@ -9,9 +9,9 @@
 import Foundation
 
 public protocol DataProvider {
-    func getValue<T>(key: DataProviderKey) -> Result<T, DataProviderError> where T: PropertyListValue
-    func setValue<T>(_ value: T?, for key: DataProviderKey) where T: PropertyListValue
-    func removeValue(for key: DataProviderKey)
+    func getValue<T>(key: DataProviderKey<T>) -> Result<T, DataProviderError> where T: PropertyListValue
+    func setValue<T>(_ value: T?, for key: DataProviderKey<T>) where T: PropertyListValue
+    func removeValue<T>(for key: DataProviderKey<T>) where T: PropertyListValue
     func reset()
 }
 
@@ -42,13 +42,13 @@ public enum DataProviderError: LocalizedError {
     }
 }
 
-public protocol PropertyListValue {}
+public protocol PropertyListValue: Decodable {}
 
 extension String: PropertyListValue {}
 extension Int: PropertyListValue {}
 extension Data: PropertyListValue {}
 extension Array: PropertyListValue where Element: PropertyListValue {}
-extension Dictionary: PropertyListValue where Key: StringProtocol, Value: PropertyListValue {}
+extension Dictionary: PropertyListValue where Key: StringProtocol & Decodable, Value: PropertyListValue {}
 extension Date: PropertyListValue {}
 extension Float: PropertyListValue {}
 extension Double: PropertyListValue {}

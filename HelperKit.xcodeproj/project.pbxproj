@@ -22,6 +22,7 @@
 		17A3BAE922C73B8000999232 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3BAE822C73B8000999232 /* Typealiases.swift */; };
 		17DF752222F65E4D009712D7 /* CacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF752122F65E4D009712D7 /* CacheProvider.swift */; };
 		17DF752622F6D418009712D7 /* DataProviderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF752522F6D418009712D7 /* DataProviderKey.swift */; };
+		17EBF59122FADE200093E545 /* CacheProviderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EBF59022FADE200093E545 /* CacheProviderKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		17A3BAE822C73B8000999232 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		17DF752122F65E4D009712D7 /* CacheProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheProvider.swift; sourceTree = "<group>"; };
 		17DF752522F6D418009712D7 /* DataProviderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderKey.swift; sourceTree = "<group>"; };
+		17EBF59022FADE200093E545 /* CacheProviderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheProviderKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,9 @@
 		170B5DF522C71AC700B665C0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				17EBF58F22FADDFE0093E545 /* CacheProvider */,
 				17DF752422F6D402009712D7 /* DataProvider */,
 				1761E35322EEFF5600D95DB6 /* DateFormatProvider.swift */,
-				17DF752122F65E4D009712D7 /* CacheProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,6 +200,15 @@
 			path = DataProvider;
 			sourceTree = "<group>";
 		};
+		17EBF58F22FADDFE0093E545 /* CacheProvider */ = {
+			isa = PBXGroup;
+			children = (
+				17DF752122F65E4D009712D7 /* CacheProvider.swift */,
+				17EBF59022FADE200093E545 /* CacheProviderKey.swift */,
+			);
+			path = CacheProvider;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -312,6 +323,7 @@
 				17A3BAE922C73B8000999232 /* Typealiases.swift in Sources */,
 				179387BB22C6DEC60051FD3B /* ServiceFactoryProtocol.swift in Sources */,
 				174E394A22C6CE2B00BEB47A /* ViewControllerFactoryProtocol.swift in Sources */,
+				17EBF59122FADE200093E545 /* CacheProviderKey.swift in Sources */,
 				17DF752222F65E4D009712D7 /* CacheProvider.swift in Sources */,
 				179387B122C6DD5B0051FD3B /* FlowCoordinatorActionable.swift in Sources */,
 			);
