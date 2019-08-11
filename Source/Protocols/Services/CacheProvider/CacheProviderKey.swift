@@ -10,10 +10,11 @@ import Foundation
 
 public struct CacheProviderKey<T: Codable> {
     public let cacheKey: String
-    public let defaultValue: T
+    public let defaultValue: T?
 
     public init(_ cacheKey: String,
-                defaultValue: T) {
+                valueType: T.Type,
+                defaultValue: T?) {
         self.cacheKey = cacheKey
         self.defaultValue = defaultValue
     }

@@ -11,11 +11,12 @@ import Foundation
 public struct DataProviderKey<T: PropertyListValue> {
     public let storageKey: String
     public let source: DataProviderSource
-    public let defaultValue: T
+    public let defaultValue: T?
 
     public init(_ storageKey: String,
                 source: DataProviderSource,
-                defaultValue: T) {
+                valueType: T.Type,
+                defaultValue: T?) {
         self.storageKey = storageKey
         self.source = source
         self.defaultValue = defaultValue
