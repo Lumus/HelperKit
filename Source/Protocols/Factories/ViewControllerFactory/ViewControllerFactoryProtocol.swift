@@ -9,6 +9,9 @@
 import UIKit
 
 public protocol ViewControllerFactoryProtocol {
-    func makeViewController<T: UIViewController>(with viewModel: ViewModelling?, flowCoordinator: FlowCoordinator) -> T?
-    func makeErrorViewController(with error: Error?, flowCoordinator: FlowCoordinator) -> UIViewController
+    func makeViewController<T: UIViewController>(with viewModel: ViewModelling?,
+                                                 flowCoordinator: FlowCoordinator) -> T?
+    func makeErrorViewController(with error: Error?,
+                                 title: String?,
+                                 flowCoordinator: FlowCoordinator) -> UIViewController
 }
