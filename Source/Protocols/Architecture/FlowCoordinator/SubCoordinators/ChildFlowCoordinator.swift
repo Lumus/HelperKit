@@ -14,6 +14,6 @@ public protocol ChildFlowCoordinator: FlowCoordinator {
 
 public extension ChildFlowCoordinator {
     func broadcast(_ action: FlowCoordinatorActionable) {
-        parentFlowCoordinator.handle(action: action, source: .broadcast)
+        parentFlowCoordinator.broadcast(action)
     }
 }
