@@ -14,5 +14,5 @@ public protocol DataProvider {
     func getValue<T>(key: DataProviderKey<T>) -> DataProviderResult<T>
     func setValue<T>(_ value: T?, for key: DataProviderKey<T>) where T: PropertyListValue
     func removeValue<T>(for key: DataProviderKey<T>) where T: PropertyListValue
-    func reset()
+    func reset(completion: () -> Void)
 }
