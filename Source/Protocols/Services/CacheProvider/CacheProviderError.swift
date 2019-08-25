@@ -10,6 +10,10 @@ import Foundation
 
 /// Error that an object conforming to `CacheProvider` can throw.
 public enum CacheProviderError: LocalizedError {
+
+    /// An object with ID was requested by no ID was provided.
+    case noId(objectType: Any)
+
     /// The item identifier could not be found for the provided object type.
     case notFound(identifier: String)
 
@@ -27,6 +31,7 @@ public enum CacheProviderError: LocalizedError {
 
     public var errorDescription: String? {
         switch self {
+        case let .noId(objectType): return "No object identifier provided for object type: \(objectType)"
         case let .notFound(identifier): return "Item with identifier \"\(identifier)\" could not be found."
         case let .unknownObject(objectType): return "Item type \"\(objectType.self)\" not available in cache service."
         case let .populateFailed(objectType): return "Object array for type \"\(objectType.self)\" failed to populate."
