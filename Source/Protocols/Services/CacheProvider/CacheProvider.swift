@@ -12,8 +12,9 @@ public typealias CacheProviderResult<T> = Result<T, CacheProviderError> where T:
 public typealias CacheProviderCompletion = () -> Void
 
 public protocol CacheProvider {
-    func getObject<T>(key: CacheProviderKey<T>, identifier: Int) -> CacheProviderResult<T>
-    func getObject<T>(key: CacheProviderKey<T>, identifier: String) -> CacheProviderResult<T>
+    func getObject<T>(key: CacheProviderKey<T>, identifier: Int?) -> CacheProviderResult<T>
+    func getObject<T>(key: CacheProviderKey<T>, identifier: String?) -> CacheProviderResult<T>
+    func getObject<T>(key: CacheProviderKey<T>, identifier: AnyHashable) -> CacheProviderResult<T>
     func allObjects<T>(key: CacheProviderKey<T>) -> CacheProviderResult<T>
     func populate(completion: @escaping CacheProviderCompletion)
 }
