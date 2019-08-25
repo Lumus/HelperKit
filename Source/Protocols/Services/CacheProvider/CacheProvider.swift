@@ -15,6 +15,9 @@ public protocol CacheProvider {
     func getObject<T>(key: CacheProviderKey<T>, identifier: Int?) -> CacheProviderResult<T>
     func getObject<T>(key: CacheProviderKey<T>, identifier: String?) -> CacheProviderResult<T>
     func getObject<T>(key: CacheProviderKey<T>, identifier: AnyHashable) -> CacheProviderResult<T>
+    func cacheObject<T, U>(_ object: T,
+                           key: CacheProviderKey<T>,
+                           identifier: U) throws where T: Codable, U: Hashable
     func allObjects<T>(key: CacheProviderKey<T>) -> CacheProviderResult<T>
     func populate(completion: @escaping CacheProviderCompletion)
 }
