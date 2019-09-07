@@ -8,4 +8,4 @@
 
 import Foundation
 
-public protocol ViewModelling: class {}
+public protocol ViewModelling: AnyObject {}
